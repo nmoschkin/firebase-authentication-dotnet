@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>netstandard1.1</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <PackageId>FirebaseAuthentication.net</PackageId>
         <PackageVersion>3.7.1</PackageVersion>
         <Authors>Step Up Labs, Inc.</Authors>
@@ -16,6 +16,6 @@
         <PackageTags>Firebase Auth Authentication Google Facebook Github Twitter Apple</PackageTags>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     </ItemGroup>
 </Project>

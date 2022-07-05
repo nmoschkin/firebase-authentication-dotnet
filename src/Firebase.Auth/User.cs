@@ -1,4 +1,7 @@
-﻿namespace Firebase.Auth
+﻿
+using System.Collections.Generic;
+
+namespace Firebase.Auth
 {
     using System.ComponentModel;
 
@@ -103,6 +106,14 @@
         [JsonProperty("phoneNumber", DefaultValueHandling = DefaultValueHandling.Populate)]
         [DefaultValue("")]
         public string PhoneNumber
+        {
+            get;
+            set;
+        }
+
+        [JsonProperty("customAttributes")]
+        [JsonConverter(typeof(CustomClaimsJsonConverter))]
+        public Dictionary<string, object> CustomClaims
         {
             get;
             set;
